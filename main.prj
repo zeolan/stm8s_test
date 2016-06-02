@@ -6,9 +6,9 @@ IncPath=C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\HSTM8
 IncPathFilter=
 ObjPath=
 PVCSArchive=
-Name=Acia
+Name=Test
 Description=stm8s test programm
-ExecName=acia.sm8
+ExecName=main.sm8
 DefsChanged=0
 TabWidth=8
 IndentGuides=YES
@@ -28,9 +28,9 @@ Verbose=NO
 SymbOnly=NO
 Physmap=NO
 BankSpec=NO
-OutputFile=acia.sm8
-InCmd=acia.lkf
-MapFile=acia.map
+OutputFile=main.sm8
+InCmd=main.lkf
+MapFile=main.map
 [Debug]
 Cmd=C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Zapstm8.exe
 [Debug1]
@@ -52,7 +52,7 @@ Bias=
 Entry=
 MaxBytes=
 HeaderString=
-OutputFile=acia.hex
+OutputFile=main.hex
 [Clabs]
 SPECIFICS=YES
 AddLibs=NO
@@ -82,7 +82,7 @@ Bias=
 Entry=
 MaxBytes=
 HeaderString=
-OutputFile=acia.hex
+OutputFile=main.hex
 [Builder.Clabs]
 Exec=YES
 SPECIFICS=YES
@@ -113,14 +113,14 @@ Exec=NO
 Cmd=
 [Files]
 1=crts.s
-2=acia.c
+2=main.c
 3=vector.c
 [FILE1OPTS]
 FileName=crts.s
 TOOL=castm8
 DefsChanged=0
 [FILE2OPTS]
-FileName=acia.c
+FileName=main.c
 TOOL=cxstm8
 DefsChanged=0
 [FILE3OPTS]

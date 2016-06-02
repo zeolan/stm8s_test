@@ -9,7 +9,7 @@
 +seg .bss -a .data -n .bss
 
 crts.o					# startup routine
-acia.o					# application program
+main.o					# application program
 
 #
 # float and integer library names depend on the model used
