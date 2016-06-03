@@ -8,6 +8,7 @@
 
 extern void _stext();		/* startup routine */
 extern void recept();		/* character receive handler */
+extern void tim1_ovf();         /* timer1 overflow handler */
 
 #pragma section const {vector}
 
@@ -25,7 +26,7 @@ void (* const @vector _vectab[32])() = {
 	NULL,			/* CAN RX      */
 	NULL,			/* CAN TX      */
 	NULL,			/* SPI         */
-	NULL,			/* TIMER 1 OVF */
+	tim1_ovf,		/* TIMER 1 OVF */
 	NULL,			/* TIMER 1 CAP */
 	NULL,			/* TIMER 2 OVF */
 	NULL,			/* TIMER 2 CAP */
