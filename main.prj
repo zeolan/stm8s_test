@@ -127,3 +127,5 @@ DefsChanged=0
 FileName=vector.c
 TOOL=cxstm8
 DefsChanged=0
+[Headers]
+1=c:\projects\stm8s_test\defines.h
